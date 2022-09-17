@@ -13,10 +13,11 @@ Capitulo 08 -  Tratamento de Erros<br>
 Capitulo 09 -  Projeto Campo minado - Utilizando JUnit 5<br>
 Capitulo 10 -  Generics<br>
 Capitulo 11 -  Java Desktop com Swing<br>
-Capitulo 12 -  Banco de Dados Relacional<br><br>
-*FALTA CONCLUIR...* <br><br>
+Capitulo 12 -  Banco de Dados Relacional<br>
 Capitulo 13 - Banco de Dados com JDBC  <br>
-Capitulo 14 -  Java Perseistence API (JPA) <br>
+Capitulo 14 -  Java Perseistence API (JPA) <br><br>
+
+*FALTA CONCLUIR...* <br><br>
 Capitulo 15 -  Modularidade em Java <br>
 Capitulo 16 -  JavaFX <br>
 Capitulo 17 -  Conceitos Sobre WEB <br>
