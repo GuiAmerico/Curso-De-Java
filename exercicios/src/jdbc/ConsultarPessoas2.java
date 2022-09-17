@@ -15,7 +15,7 @@ public class ConsultarPessoas2 {
 		Scanner entrada = new Scanner(System.in);
 		System.out.print("Digite o parâmetro de busca: ");
 		String param = entrada.nextLine();
-		Connection conexao = FabricaConexao.getConexao();
+		Connection conexao = FabricaConexao2.getConexao();
 		String sql = "SELECT * FROM pessoa WHERE nome LIKE ?";
 		PreparedStatement stmt = conexao.prepareStatement(sql);
 		stmt.setString(1, "%" + param + "%");

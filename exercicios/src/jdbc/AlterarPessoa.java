@@ -12,20 +12,19 @@ public class AlterarPessoa {
 		// TODO Auto-generated method stub
 		Connection conexao = FabricaConexao.getConexao();
 		Scanner entrada = new Scanner(System.in);
-		System.out.print("Informe o nome da pessoa: ");
-		String nome = entrada.nextLine();
-		System.out.print("Informe o novo nome da pessoa: ");
+		System.out.print("Digite o novo nome: ");
 		String novoNome = entrada.nextLine();
-		String sql = "UPDATE pessoa SET nome = ? WHERE nome = ?";
-		PreparedStatement pstm = conexao.prepareStatement(sql);
-		pstm.setString(1, nome);
-		pstm.setString(2, novoNome);
-		pstm.execute();
-		//ResultSet resultado = pstm.executeQuery(sql);
-		System.out.println("UPDATE realizado com sucesso");
+		System.out.print("Digite o ID da pessoa que você deseja mudar o nome: ");
+		int codigo = entrada.nextInt();
+		String sql = "UPDATE pessoa SET nome = ? WHERE codigo = ?";
 		
-		conexao.close();
+		PreparedStatement pstm = conexao.prepareStatement(sql);
+		pstm.setString(1, novoNome);
+		pstm.setInt(2, codigo);
+		pstm.execute();
+		System.out.println("UPTADE realizado com sucesso");
 		entrada.close();
+		conexao.close();
 
 	}
 
